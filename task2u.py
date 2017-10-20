@@ -10,10 +10,10 @@ condition = location.condition()
 
 # Get weather forecasts for the upcoming days.
 for forecasts in location.forecast():
-    a=forecasts['high']
-    b=forecasts['low']
-    i=a
-    list1=[a[i]]
+    a=[forecasts['high']]
+    b=[forecasts['low']]
+    
+    list1=[a]
     list2=[b]
     print(list1)
     
