@@ -1,0 +1,18 @@
+import unittest
+from weather import Weather
+
+weather = Weather()
+# Lookup via location name.
+print('enter a city:')
+x=input('')
+location = weather.lookup_by_location(x)
+condition = location.condition()
+print (condition['text'])
+
+# Get weather forecasts for the upcoming days.
+for forecasts in location.forecast():
+    a=forecasts['high']
+    b=forecasts['low']
+    
+    print(a,b)
+    
